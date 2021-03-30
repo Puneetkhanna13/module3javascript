@@ -1,4 +1,6 @@
 {
+[
+  {
 "name" : "A pre-fabricated home in a shipping container",
 "price" : "$36,000",
 "description" : "Who says you have to pay exorbitant broker fees to find the home of your dreams? You can make your dreams of homeownership come true as easily as you'd buy a bottle of dish soap, thanks to this storage-container-turned-house, available for a cool $36K. And before you sign off on a mortgage", 
@@ -32,4 +34,6 @@
 "description" : "This seems like the nicest thing to be plucked from a cat's rear since, well, ever. And who doesn't like to be stared down with peering, inquisitive eyes each time they need to blow their nose?", 
 "features" : "peering, inquisitive eyes",
 "image": "5.jpg"
+}
+]
 }
