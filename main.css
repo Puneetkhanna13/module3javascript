@@ -1,0 +1,11 @@
+body {
+	text-align: center
+}
+article {
+	border: 1px solid black;
+	margin-top: 2px;
+}
+img {
+	height: 100px;
+	width: 100px;
+}

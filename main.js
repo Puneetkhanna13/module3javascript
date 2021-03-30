@@ -3,20 +3,18 @@ let requestURL = "https://Puneetkhanna13.github.io/module3javascript/products.js
 let section=document.getElementsByTagName('section');
 
 let request = new XMLHttpRequest(); 
-request.open('GET', requestURL);
-request.responseType = 'json';
+request.open('GET', requestURL,true);
+request.responseType='json';
 request.send();
 
 request.onload = function() {
   let deals = request.response;
-  load(deals);  
+  load(deals['deals']);
 }
 
 function load(jsonObj) {
   
-  
   for (let i = 0; i < jsonObj.length; i++) {
-	  
     let article = document.createElement('article');
     let h2 = document.createElement('h2');
     let img = document.createElement('img');
@@ -24,7 +22,7 @@ function load(jsonObj) {
     let p2 = document.createElement('p');
     let p3 = document.createElement('p');
     
-    img.setAttribute('src', 'https://Puneetkhanna13.github.io/module3javascript/images/' + jsonObj[i].image);
+    img.setAttribute('src', 'https://Puneetkhanna13.github.io/module3javascript/' + jsonObj[i].image);
     img.setAttribute('alt', jsonObj[i].image );
     
     h2.textContent = jsonObj[i].name; 
@@ -37,7 +35,7 @@ function load(jsonObj) {
     article.appendChild(h2);
     article.appendChild(p1); 
     article.appendChild(p2);
-    article.appendChild(list);
+    article.appendChild(p3);
     section[0].appendChild(article); 
      
   }
